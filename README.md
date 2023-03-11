@@ -1,0 +1,2 @@
+# FAST8Docmng1CPDFStamp
+FAST8Docmng1CPDFStamp
