@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.14">
+	<ConfigVersions>
+		<Metadata name="CommonModule.ШтрихкодированиеСервер" id="34415312-23ea-4378-a4c3-bae75f4e9419" configVersion="b8da4794c17ca3b0afde8c4c8e40c2065562f18f"/>
+		<Metadata name="CommonModule.ШтрихкодированиеСервер.Module" id="34415312-23ea-4378-a4c3-bae75f4e9419.0" configVersion="10f191a34faf89baa9e40a4ae2fbef42b2849a89"/>
+		<Metadata name="Configuration.FAST8DocMngPDFMark1C" id="64251a27-826a-4ce0-a325-bd0c546161a8" configVersion="afac57d6d08010ba1a1887450c567cafd0285e2c"/>
+		<Metadata name="Language.Русский" id="ed00eef9-7b50-4ef9-880c-6a2430eef6fb" configVersion="b9a811130f8c8d37577c6cf467dda7fec23fbd1a"/>
+		<Metadata name="Role.FAST8pdf_ОсновнаяРоль" id="9264ab15-e9a1-4728-ae75-a6be433868e6" configVersion="3096634d43cbb9c29e4e5e42be570023eb877ccc"/>
+	</ConfigVersions>
+</ConfigDumpInfo>
