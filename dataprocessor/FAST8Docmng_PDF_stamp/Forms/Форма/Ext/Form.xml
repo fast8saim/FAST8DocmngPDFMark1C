@@ -1,64 +1,121 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
-		<ChildItems>
-			<Button name="ФормаТест" id="1">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.Тест</CommandName>
-				<ExtendedTooltip name="ФормаТестРасширеннаяПодсказка" id="2"/>
-			</Button>
-			<Button name="ФормаИнсталл" id="6">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.Инсталл</CommandName>
-				<ExtendedTooltip name="ФормаИнсталлРасширеннаяПодсказка" id="7"/>
-			</Button>
-		</ChildItems>
+		<Autofill>false</Autofill>
 	</AutoCommandBar>
 	<ChildItems>
-		<InputField name="Входящий" id="3">
-			<DataPath>Объект.Входящий</DataPath>
-			<ContextMenu name="ВходящийКонтекстноеМеню" id="4"/>
-			<ExtendedTooltip name="ВходящийРасширеннаяПодсказка" id="5"/>
-		</InputField>
+		<LabelDecoration name="ДекорацияИнформация" id="18">
+			<TextColor>web:Green</TextColor>
+			<Font ref="style:NormalTextFont" height="20" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>FAST8 docmng PDF stamp Сервисная обработка</v8:content>
+				</v8:item>
+			</Title>
+			<BackColor>web:Yellow</BackColor>
+			<ContextMenu name="ДекорацияИнформацияКонтекстноеМеню" id="19"/>
+			<ExtendedTooltip name="ДекорацияИнформацияРасширеннаяПодсказка" id="20"/>
+		</LabelDecoration>
+		<Button name="fast8ИнсталлироватьСкрипты" id="23">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.fast8ИнсталлироватьСкрипты</CommandName>
+			<ExtendedTooltip name="fast8ИнсталлироватьСкриптыРасширеннаяПодсказка" id="24"/>
+		</Button>
+		<Button name="fast8ИнсталлироватьБиблиотекиPython" id="14">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.fast8ИнсталлироватьБиблиотекиPython</CommandName>
+			<ExtendedTooltip name="fast8ИнсталлироватьБиблиотекиPythonРасширеннаяПодсказка" id="15"/>
+		</Button>
+		<UsualGroup name="ГруппаТестирование" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тестирование</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тестирование</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>NormalSeparation</Representation>
+			<ExtendedTooltip name="ГруппаТестированиеРасширеннаяПодсказка" id="22"/>
+			<ChildItems>
+				<InputField name="ВходящийДокумент" id="11">
+					<DataPath>Объект.ВходящийДокумент</DataPath>
+					<ContextMenu name="ВходящийДокументКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="ВходящийДокументРасширеннаяПодсказка" id="13"/>
+				</InputField>
+				<InputField name="ФайлPDF" id="8">
+					<DataPath>Объект.ФайлPDF</DataPath>
+					<ContextMenu name="ФайлPDFКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="ФайлPDFРасширеннаяПодсказка" id="10"/>
+				</InputField>
+				<Button name="fast8ПроштамповатьФайл" id="16">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.fast8ПроштамповатьФайл</CommandName>
+					<ExtendedTooltip name="fast8ПроштамповатьФайлРасширеннаяПодсказка" id="17"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
 			<Type>
-				<v8:Type>cfg:ExternalDataProcessorObject.FAST8Docmng_PDF_stamp</v8:Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.FAST8DocmngPDFStamp1C</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
 		</Attribute>
 	</Attributes>
 	<Commands>
-		<Command name="Тест" id="1">
+		<Command name="fast8ПроштамповатьФайл" id="1">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Тест</v8:content>
+					<v8:content>Проштамповать файл</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Тест</v8:content>
+					<v8:content>Проштамповать файл</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>Тест</Action>
+			<Action>fast8ПроштамповатьФайл</Action>
 		</Command>
-		<Command name="Инсталл" id="2">
+		<Command name="fast8ИнсталлироватьБиблиотекиPython" id="2">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Инсталл</v8:content>
+					<v8:content>Инсталлировать библиотеки python</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Инсталл</v8:content>
+					<v8:content>Инсталлировать библиотеки python</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>Инсталл</Action>
+			<Action>fast8ИнсталлироватьБиблиотекиPython</Action>
+		</Command>
+		<Command name="fast8ИнсталлироватьСкрипты" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Инсталлировать скрипты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Fast8 инсталлировать скрипты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>fast8ИнсталлироватьСкрипты</Action>
 		</Command>
 	</Commands>
 </Form>
