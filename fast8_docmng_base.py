@@ -8,7 +8,7 @@ import os
 
 script_dir = os.getcwd()
 
-if len(sys.argv) == 9 and sys.argv[1] == "1cdocmng":
+if len(sys.argv) == 10 and sys.argv[1] == "1cdocmng":
     
     params = {
         'source_file': sys.argv[2],
@@ -16,10 +16,11 @@ if len(sys.argv) == 9 and sys.argv[1] == "1cdocmng":
         'x_coordinat': int(sys.argv[4]),
         'y_coordinat': int(sys.argv[5]),
         'string_one': sys.argv[6],
-        'string_two': sys.argv[7]
+        'string_two': sys.argv[7],
+        'font_size': int(sys.argv[8])
         }
 
-    error_log = sys.argv[8]
+    error_log = sys.argv[9]
 
     try:
         exec(open(f'{script_dir}\\fast8_pdf_stamp.py', "r", encoding = "utf").read(), params)

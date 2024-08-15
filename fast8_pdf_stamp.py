@@ -18,13 +18,14 @@ from reportlab.pdfbase.ttfonts import TTFont
 #y_coordinat = 0
 #sting_one = ''
 #sting_two = ''
+#font_size = 8
 
 pdfmetrics.registerFont(TTFont('Arial', 'Arial.ttf'))
  
 packet = io.BytesIO()
 # Create a new PDF with Reportlab
 can = canvas.Canvas(packet, pagesize=letter)
-can.setFont('Arial', 20)
+can.setFont('Arial', font_size)
 can.drawString(x_coordinat, y_coordinat, string_one)
 can.drawString(x_coordinat, y_coordinat - 25, string_two)
 can.showPage()
